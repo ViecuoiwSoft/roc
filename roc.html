@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>ROC</title>
+        <link rel="stylesheet" type="text/css" href="roc.css">
+    </head>
+    <body>
+        <div id="panel"> 
+            <div id="timeline">
+                <span class="past"></span>
+                <span class="past"></span>
+                <span class="past"></span>
+                <span class="past"></span>
+                <span class="past"></span>
+                <span class="now"></span>
+                <span class="future event"></span>
+                <span class="future"></span>
+                <span class="future"></span>
+                <span class="future"></span>
+                <span class="future"></span>
+            </div>
+            <div id="status">
+                <div id="main">
+                    <div>
+                        <span id="indicator" class=""></span>
+                        <span id="x" class="">99</span>
+                        <span id="strike">/</span>
+                        <span id="xm">999</span>
+                    </div>
+                    <div id="warning"></div>
+                </div>
+                <div id="progress">
+                    <div id="upper" class="future">
+                        <span id="level">xl</span>
+                        <span id="amount">3/3</span>
+                        <div id="bar"></div>
+                    </div>
+                    <div class="past">
+                        <span>Steps: </span>
+                        <span>0</span>
+                        <span> Time: </span>
+                        <span>0s</span>
+                    </div>
+                </div>
+            </div>
+            <div id="options">
+                <button class="past">Back</button>
+                <button class="now" onclick="roll()" onmouseenter="roll()" onmouseleave="rollback()">Roll</button>
+                <button class="future" onclick="step()" onmouseenter="predict()" onmouseleave="endPredict()">Next</button>
+            </div>
+            <div id="backlog">
+                <span class="past"></span>
+            </div>
+            <div id="prediction">
+                <span class="future"></span>
+            </div>
+        </div>
+        <script src="goal.js"></script>
+    </body>
+</html>

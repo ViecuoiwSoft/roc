@@ -1,0 +1,157 @@
+#panel {
+    position: absolute;
+    width: 480px;
+    height: 640px;
+    left: calc(50% - 240px);
+    top: calc(50% - 320px);
+    background-color: #222222;
+}
+
+#timeline {
+    height: 36px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+#timeline span {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    vertical-align: top;
+}
+
+.past {
+    color: #ffbe6e;
+}
+
+.now {
+    color: #8ef88f;
+}
+
+.future {
+    color: #7fd7fa;
+}
+
+.event {
+    background-color: #515144;
+}
+
+.param {
+    background-color: #646484;
+}
+
+#status {
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#status>div {
+    display: inline-block;
+    position: absolute;
+    height: 120px;
+    width: 50%;
+}
+
+#main {
+    left: 0%;
+    text-align: right;
+}
+
+#indicator {
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+}
+
+#warning {
+    margin-left: 50px;
+    text-align: left;
+    font-size: 20px;
+    color: #ff8040;
+}
+
+#x, #strike {
+    font-size: 60px;
+    color: #cccccc;
+}
+
+#xm {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #aaaaaa;
+}
+
+div#progress {
+    left: 50%;
+    text-align: center;
+    width: 234px;
+    margin-right: 6px;
+
+    #upper {
+        height: 50px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        
+        #level {
+            display: inline-block;
+            width: 100px;
+            height: 24px;
+            text-align: left;
+        }
+        
+        #amount {
+            display: inline-block;
+            width: 100px;
+            height: 24px;
+            text-align: right;
+        }
+
+        #bar {
+            margin: 5px 5px 5px 5px;
+            height: 6px;
+            background-color: #8ef88f;
+        }
+    }
+}
+
+#options {
+    margin: 12px 6px;
+    text-align: center;
+
+    button {
+        /* display: inline-block; */
+        width: 120px;
+        height: 60px;
+        padding: 4px 4px;
+        margin: 6px;
+        border-style: none;
+        background-color: #00000000;
+        font-size: 40px;
+    }
+
+    button:hover {
+        padding: 0px;
+        border: 4px;
+        border-style: solid;
+        border-color: #888888;
+    }
+}
+
+#backlog, #prediction {
+    margin: 16px 16px;
+
+    span {
+        line-height: 24px;
+    }
+}
+
+.gain, #x.gain {
+    color: #77ffaa;
+}
+
+.loss, #x.loss {
+    color: #ff77aa;
+}
